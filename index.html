@@ -1,69 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Fabio Landin</title>
-    <!-- Dev Icon Fonts-->
-     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        
-     <!-- CSS do projeto-->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabio Landin — Desenvolvedor Full Stack</title>
+  <meta name="description" content="Fabio Landin, desenvolvedor full stack formado em Engenharia de Software. Backend em NestJS/FastAPI, frontend em React — projeto em destaque: BM Metais ERP.">
+  <meta property="og:title" content="Fabio Landin — Desenvolvedor Full Stack">
+  <meta property="og:description" content="Backend em NestJS/FastAPI, frontend em React. Projeto em destaque: BM Metais ERP, um sistema de gestão fullstack real.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main id="container">
-        <aside id="bio-container">
-            <h2>Fabio Landin</h2>
-            <img  id="bio-image" src="img/perfil.jpg" alt="Fabio Landin">
-            <p>Olá, meu nome é Fabio Landin e sou um deselvovedor back-end em busca da <span class="highlight">primeira oportunidade na área!</span></p>
-            <p id="welcome-text">Seja bem vindo!</p>
-            <ul id="social-container">
-                <li><a href="#" taget="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li><a href="https://www.linkedin.com/in/fabio-landin-a76867262/" taget="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/fabio_landin/" taget="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            </ul>
-            <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a href="mailto:flandin1990@gmail.com">flandin1990@gmail.com</a>
-            </div>
-        </aside>
-        <section id="about-container">
-            <h1 id="name">Fabio Landin</h1>
-            <p id="title"><span class="highlight">Desenvolvedor Iniciante</span></p>
-            <p class="description">Sou um desenvolvedor back-end iniciante, com conhecimentos em e-commerce e controladoria. Estou em busca da minha primeira oportunidade na área e tenho muita vontade de aprender e crescer na profissão.</p>
-            <p class="description">Apaixonado por tecnologia, estou começando minha jornada como dev back-end. Tenho sede de aprendizado e estou estudando todos os dias para evoluir e encarar novos desafios no desenvolvimento.</p>
-            <a href="https://github.com/Fabiolandin?tab=repositories" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon>
-            <span>Ver Projetos</span>
-            </a>
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            <p class="description">Conheça as tecnologias que domino:</p>
 
-                <div id="skills-container">
-            <div class="skills-box">
-                <p class="skills-title">Front-end</p>
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i>
-            </div>
-            <div class="skills-box">
-                <p class="skills-title">Back-end</p>
-                <i class="devicon-nodejs-plain colored"></i>
-                <i class="devicon-python-plain colored"></i>
-            </div>
-            <div class="skills-box">
-                <p class="skills-title">Databases</p>
-                <i class="devicon-mysql-plain colored"></i>
-                <i class="devicon-mongodb-plain colored"></i>
-            </div>
-            <div class="skills-box">
-                <p class="skills-title">Versionamento</p>
-                <i class="devicon-git-plain colored"></i>
-                <i class="devicon-github-original colored"></i>
-            </div>
-            </div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <span class="topbar-tag"><span class="dot">●</span> sistema://fabio-landin</span>
+      <ul class="topbar-nav">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
 
-        </section>
-    </main>
-          
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Ficha de operador — status: ativo</p>
+        <h1>Fabio Landin</h1>
+        <p class="hero-role">Desenvolvedor Full Stack</p>
+        <p class="hero-desc">Construo sistemas que resolvem problemas reais, do backend que sustenta a regra de negócio até a interface que o usuário final realmente usa.</p>
+
+        <dl class="spec-sheet">
+          <div class="spec-row">
+            <dt>Formação</dt>
+            <dd>Engenharia de Software</dd>
+          </div>
+          <div class="spec-row">
+            <dt>Atuação</dt>
+            <dd>Implementação de sistemas de gestão (ERP)</dd>
+          </div>
+          <div class="spec-row">
+            <dt>Foco técnico</dt>
+            <dd>Backend NestJS / FastAPI · Frontend React</dd>
+          </div>
+        </dl>
+
+        <div class="hero-ctas">
+          <a href="#projetos" class="btn btn-primary">Ver projeto em destaque</a>
+          <a href="#contato" class="btn btn-ghost">Contato</a>
+        </div>
+      </div>
+
+      <aside class="hero-badge">
+        <img src="img/perfil.jpg" alt="Fabio Landin">
+        <div class="badge-label">
+          <span>Operador</span>
+          <span class="status">● ativo</span>
+        </div>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/fabio-landin-a76867262/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Fabiolandin" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.instagram.com/fabio_landin/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="index">01</span>
+        <h2>Sobre</h2>
+      </div>
+      <div class="about-text">
+        <p>Trabalho no dia a dia implementando sistemas de gestão para empresas, atuando tanto na lógica de backend quanto na experiência do usuário final. É um trabalho que exige entender processos reais de negócio — estoque, pedidos, permissões — antes de escrever a primeira linha de código.</p>
+        <p>Fora do expediente, uso projetos pessoais pra ir mais fundo no que aprendo. O <strong>BM Metais ERP</strong> é o mais recente: um sistema fullstack construído do zero, com autenticação, controle de permissões por perfil e regras de negócio de verdade — não um CRUD de curso.</p>
+      </div>
+      <div class="about-note">
+        // princípio de trabalho: entender o "porquê" por trás de uma solução, não só fazer funcionar.
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="index">02</span>
+        <h2>Stack</h2>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-box">
+          <p class="stack-code">BE — backend</p>
+          <h3>Backend</h3>
+          <ul class="stack-list">
+            <li><span class="stack-dot"></span>NestJS</li>
+            <li><span class="stack-dot"></span>FastAPI</li>
+            <li><span class="stack-dot"></span>Node.js</li>
+            <li><span class="stack-dot"></span>Python</li>
+          </ul>
+        </div>
+        <div class="stack-box">
+          <p class="stack-code">FE — frontend</p>
+          <h3>Frontend</h3>
+          <ul class="stack-list">
+            <li><span class="stack-dot"></span>React</li>
+            <li><span class="stack-dot"></span>TypeScript</li>
+            <li><span class="stack-dot"></span>Tailwind CSS</li>
+            <li><span class="stack-dot"></span>Vite</li>
+          </ul>
+        </div>
+        <div class="stack-box">
+          <p class="stack-code">DB — dados</p>
+          <h3>Databases</h3>
+          <ul class="stack-list">
+            <li><span class="stack-dot"></span>SQLite</li>
+            <li><span class="stack-dot"></span>MySQL</li>
+            <li><span class="stack-dot"></span>MongoDB</li>
+          </ul>
+        </div>
+        <div class="stack-box">
+          <p class="stack-code">OPS — ferramentas</p>
+          <h3>Outros</h3>
+          <ul class="stack-list">
+            <li><span class="stack-dot"></span>Prisma ORM</li>
+            <li><span class="stack-dot"></span>JWT / Auth</li>
+            <li><span class="stack-dot"></span>Git & GitHub</li>
+            <li><span class="stack-dot amber"></span>Swagger / OpenAPI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="index">03</span>
+        <h2>Projetos</h2>
+      </div>
+
+      <article class="project-featured">
+        <span class="project-tag">Projeto real — não é curso</span>
+        <h3>BM Metais ERP</h3>
+        <p>Sistema de gestão fullstack construído do zero: produtos, estoque, pedidos, compras, clientes e funcionários — com autenticação e regras de negócio reais.</p>
+
+        <ul class="project-highlights">
+          <li>Autenticação JWT com controle de permissões por perfil (admin / funcionário)</li>
+          <li>Correção de uma race condition real no fluxo de pedidos, com transação atômica no banco</li>
+          <li>Dashboard com gráficos de pedidos e faturamento</li>
+          <li>Documentação interativa da API via Swagger</li>
+        </ul>
+
+        <div class="project-chips">
+          <span class="chip">NestJS</span>
+          <span class="chip">Prisma</span>
+          <span class="chip">React</span>
+          <span class="chip">Vite</span>
+          <span class="chip">TailwindCSS</span>
+          <span class="chip">JWT</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Fabiolandin/bmmetais-erp-back" target="_blank" rel="noopener" class="btn btn-primary">Repositório — Backend</a>
+          <a href="https://github.com/Fabiolandin/bmmetais-frontend" target="_blank" rel="noopener" class="btn btn-ghost">Repositório — Frontend</a>
+        </div>
+      </article>
+
+      <div class="project-list">
+        <a class="project-row" href="https://github.com/Fabiolandin/fastapi-crud-authentication" target="_blank" rel="noopener">
+          <span class="name">fastapi-crud-authentication</span>
+          <span class="desc">API REST com FastAPI focada em autenticação JWT e operações CRUD</span>
+          <span class="arrow mono">ver →</span>
+        </a>
+        <a class="project-row" href="https://github.com/Fabiolandin/Crud-em-Node.js" target="_blank" rel="noopener">
+          <span class="name">Crud-em-Node.js</span>
+          <span class="desc">CRUD básico em Node.js e Express — projeto de estudo dos fundamentos de backend</span>
+          <span class="arrow mono">ver →</span>
+        </a>
+        <a class="project-row" href="https://github.com/Fabiolandin?tab=repositories" target="_blank" rel="noopener">
+          <span class="name">Ver todos os repositórios</span>
+          <span class="desc">Projetos de estudo e outros experimentos no GitHub</span>
+          <span class="arrow mono">ver →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contato">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="section-head">
+          <span class="index">04</span>
+          <h2>Contato</h2>
+        </div>
+        <dl class="spec-sheet contact-sheet">
+          <div class="spec-row">
+            <dt>Email</dt>
+            <dd><a href="mailto:flandin1990@gmail.com">flandin1990@gmail.com</a></dd>
+          </div>
+          <div class="spec-row">
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/fabio-landin-a76867262/" target="_blank" rel="noopener">fabio-landin</a></dd>
+          </div>
+          <div class="spec-row">
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/Fabiolandin" target="_blank" rel="noopener">Fabiolandin</a></dd>
+          </div>
+        </dl>
+      </div>
+      <p class="footer-note">// fim do registro</p>
+    </div>
+  </footer>
+
 </body>
 </html>
